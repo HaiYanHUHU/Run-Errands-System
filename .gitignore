@@ -1,0 +1,13 @@
+deploy/
+node_modules/
+.idea/
+package-lock.json
+runtime/
+.env
+dist/
+pnpm-lock.yaml
+.DS_Store
+.umi/
+.umi-production/
+
+

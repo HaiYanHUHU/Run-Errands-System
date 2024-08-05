@@ -1,0 +1,110 @@
+{
+  "vetur.validation.template": false,
+  "git.enableSmartCommit": true,
+  "editor.formatOnType": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "files.insertFinalNewline": true,
+  "files.associations": {
+    "*.php": "php",
+    "Dockerfile_*": "dockerfile",
+    "Teafile*": "json",
+    "Darafile*": "json",
+    "*CMakeLists*": "cmake",
+    "*cmake.in": "cmake",
+    ".stylelintrc": "json"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.DS_Store": true,
+    "**/.idea": true,
+    "**/.php_cs.cache": true,
+    "**/composer.lock": true,
+    "**/.vs/": true
+  },
+  "git.autofetch": true,
+  "editor.suggestSelection": "first",
+  "html.validate.scripts": false,
+  "javascript.format.enable": true,
+  "vetur.experimental.templateInterpolationService": true,
+  "files.eol": "\n",
+  "git.rebaseWhenSync": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.iconTheme": "vscode-icons",
+  "vetur.format.defaultFormatter.js": "prettier-eslint",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "diffEditor.ignoreTrimWhitespace": true,
+  "editor.renderControlCharacters": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "editor.tabSize": 2,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "[nginx]": {
+    "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": true
+  },
+  "eslint.codeActionsOnSave.mode": "problems",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "github.copilot.advanced": {
+    "enable": true,
+    "indentationMode": {
+      "python": false,
+      "javascript": false,
+      "javascriptreact": false,
+      "jsx": false,
+      "typescript": false,
+      "typescriptreact": false,
+      "go": false,
+      "ruby": false,
+      "*": true
+    }
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "editor.stickyTabStops": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "cSpell.words": ["gkcs", "imei", "koapp", "minio", "regist", "rigist"]
+}

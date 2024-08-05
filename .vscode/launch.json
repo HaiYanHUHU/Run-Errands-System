@@ -1,0 +1,45 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    // {
+    //   "type": "node",
+    //   "request": "launch",
+    //   "name": "services",
+    //   "skipFiles": ["<node_internals>/**"],
+    //   "cwd": "${workspaceFolder}/services",
+    //   "stopOnEntry": false,
+    //   "program": "${workspaceFolder}/services/src/bootstrap.ts",
+    //   "runtimeArgs": ["-r", "@swc-node/register"],
+    //   "env": {
+    //     "NODE_ENV": "local"
+    //   }
+    // },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "services",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start:services"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "web",
+      "cwd": "${workspaceFolder}/web",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start:dev"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Start services&web",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start"]
+    }
+  ]
+}
