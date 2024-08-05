@@ -1,0 +1,21 @@
+# Settings and configurations that are common for all containers
+services:
+  redis:
+    image: redis
+    # container_name: "redis"
+    restart: 'always'
+    volumes:
+      - "./runtime/deploy/data/redis:/data"
+      - "./runtime/deploy/logs/redis:/logs"
+    ports:
+      - "23679:6379"
+  mongo:
+    image: "mongo"
+    # container_name: "mongo"
+    environment:
+      MONGO_INITDB_DATABASE: "run_errands_db"
+    volumes:
+      - "./runtime/deploy/data/mongo:/data/db"
+    ports:
+      - "27017:27017"
+

@@ -1,0 +1,14 @@
+{
+  "ignore": [
+    "**/*.test.ts",
+    "**/__tests__/*"
+  ],
+  "watch": [
+    "src",
+    "locales"
+  ],
+  "exec": [
+    "dotenvx run --env-file=../.env -- node -r @swc-node/register src/bootstrap.ts"
+  ],
+  "ext": "ts"
+}

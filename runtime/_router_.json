@@ -1,0 +1,374 @@
+{
+  "@": {
+    "api": {
+      "login": {
+        "__route___": [
+          {
+            "method": "POST",
+            "handlers": [
+              null
+            ],
+            "validators": {
+              "body": {
+                "rules": {
+                  "username": "required|string",
+                  "password": "required|string"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "register": {
+        "__route___": [
+          {
+            "method": "POST",
+            "handlers": [
+              null
+            ],
+            "validators": {
+              "body": {
+                "rules": {
+                  "firstName": "required|string",
+                  "lastName": "required|string",
+                  "email": "required|string",
+                  "password": "required|string",
+                  "phone": "required|string"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "registerAdmin": {
+        "__route___": [
+          {
+            "method": "POST",
+            "handlers": [
+              null
+            ],
+            "validators": {
+              "body": {
+                "rules": {
+                  "firstName": "required|string",
+                  "lastName": "required|string",
+                  "email": "required|string",
+                  "password": "required|string",
+                  "phone": "required|string"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "***": {
+        "__route___": [
+          {
+            "method": "ANY",
+            "handlers": [
+              null
+            ]
+          }
+        ]
+      },
+      "user": {
+        "__route___": [
+          {
+            "method": "GET",
+            "handlers": [
+              null
+            ],
+            "middlewares": [
+              null
+            ],
+            "afters": [
+              null
+            ]
+          }
+        ],
+        "list": {
+          "__route___": [
+            {
+              "method": "GET",
+              "handlers": [
+                null
+              ],
+              "validators": {
+                "query": {
+                  "rules": {}
+                }
+              },
+              "middlewares": [
+                null
+              ],
+              "afters": [
+                null
+              ]
+            }
+          ]
+        },
+        "add": {
+          "__route___": [
+            {
+              "method": "POST",
+              "handlers": [
+                null
+              ],
+              "middlewares": [
+                null
+              ],
+              "afters": [
+                null
+              ]
+            }
+          ]
+        },
+        "reject": {
+          "__route___": [
+            {
+              "method": "POST",
+              "handlers": [
+                null
+              ],
+              "middlewares": [
+                null
+              ],
+              "afters": [
+                null
+              ]
+            }
+          ]
+        },
+        "approve": {
+          "__route___": [
+            {
+              "method": "POST",
+              "handlers": [
+                null
+              ],
+              "middlewares": [
+                null
+              ],
+              "afters": [
+                null
+              ]
+            }
+          ]
+        },
+        "statistics": {
+          "__route___": [
+            {
+              "method": "GET",
+              "handlers": [
+                null
+              ],
+              "middlewares": [
+                null
+              ],
+              "afters": [
+                null
+              ]
+            }
+          ]
+        },
+        "*": {
+          "__route___": [
+            {
+              "params": [
+                "id"
+              ],
+              "method": "DELETE",
+              "handlers": [
+                null
+              ],
+              "validators": {
+                "params": {
+                  "rules": {
+                    "id": "required|integer"
+                  }
+                }
+              },
+              "middlewares": [
+                null
+              ],
+              "afters": [
+                null
+              ]
+            }
+          ]
+        }
+      },
+      "logout": {
+        "__route___": [
+          {
+            "method": "POST",
+            "handlers": [
+              null
+            ],
+            "middlewares": [
+              null
+            ],
+            "afters": [
+              null
+            ]
+          }
+        ]
+      },
+      "__route___": [
+        {
+          "middlewares": [
+            null
+          ],
+          "afters": [
+            null
+          ]
+        },
+        {
+          "middlewares": [
+            null
+          ],
+          "afters": [
+            null
+          ]
+        },
+        {
+          "method": "ANY",
+          "middlewares": [
+            null
+          ],
+          "afters": [
+            null
+          ]
+        },
+        {
+          "handlers": [
+            null
+          ]
+        }
+      ],
+      "task": {
+        "list": {
+          "__route___": [
+            {
+              "method": "GET",
+              "handlers": [
+                null
+              ],
+              "validators": {
+                "query": {
+                  "rules": {}
+                }
+              },
+              "middlewares": [
+                null
+              ],
+              "afters": [
+                null
+              ]
+            }
+          ]
+        },
+        "add": {
+          "__route___": [
+            {
+              "method": "POST",
+              "handlers": [
+                null
+              ],
+              "middlewares": [
+                null
+              ],
+              "afters": [
+                null
+              ]
+            }
+          ]
+        },
+        "accept": {
+          "*": {
+            "__route___": [
+              {
+                "params": [
+                  "id"
+                ],
+                "method": "PUT",
+                "handlers": [
+                  null
+                ],
+                "middlewares": [
+                  null
+                ],
+                "afters": [
+                  null
+                ]
+              }
+            ]
+          }
+        },
+        "complete": {
+          "*": {
+            "__route___": [
+              {
+                "params": [
+                  "id"
+                ],
+                "method": "PUT",
+                "handlers": [
+                  null
+                ],
+                "middlewares": [
+                  null
+                ],
+                "afters": [
+                  null
+                ]
+              }
+            ]
+          }
+        },
+        "statistics": {
+          "__route___": [
+            {
+              "method": "GET",
+              "handlers": [
+                null
+              ],
+              "middlewares": [
+                null
+              ],
+              "afters": [
+                null
+              ]
+            }
+          ]
+        },
+        "*": {
+          "__route___": [
+            {
+              "params": [
+                "id"
+              ],
+              "method": "DELETE",
+              "handlers": [
+                null
+              ],
+              "validators": {
+                "params": {
+                  "rules": {
+                    "id": "required|integer"
+                  }
+                }
+              },
+              "middlewares": [
+                null
+              ],
+              "afters": [
+                null
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
